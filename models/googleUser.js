@@ -1,6 +1,6 @@
 import mongoose, {Schema, models} from "mongoose";
 
-const userSchema = new Schema(
+const googleUserSchema = new Schema(
   {
     email: {
       type: String,
@@ -10,13 +10,10 @@ const userSchema = new Schema(
       type: String,
       require: true,
     },
-    password: {
-      type: String,
-      require: true,
-    },
   },
   {timestamps: true}
 );
 
-const User = models.User || mongoose.model("User", userSchema);
-export default User;
+const GoogleUser =
+  models.GoogleUser || mongoose.model("GoogleUser", googleUserSchema);
+export default GoogleUser;

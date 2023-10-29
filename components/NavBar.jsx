@@ -17,11 +17,11 @@ const NavBar = () => {
           Sign Out
         </button>
       ) : (
-        <button
-          onClick={() => signIn("google")}
+        <Link
+          href={"/login"}
           className="bg-slate-900 text-white px-6 py-2 rounded-md">
-          Sign In
-        </button>
+          Login
+        </Link>
       )}
     </div>
   );

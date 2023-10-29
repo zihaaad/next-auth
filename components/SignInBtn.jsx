@@ -7,7 +7,7 @@ const SignInBtn = () => {
   return (
     <button
       onClick={() => signIn("google")}
-      className="flex items-center gap-4 shadow-xl rounded-lg pl-4">
+      className="flex items-center gap-4 shadow-xl rounded-lg pl-4 mt-5">
       <Image
         alt="google-logo"
         width={30}
